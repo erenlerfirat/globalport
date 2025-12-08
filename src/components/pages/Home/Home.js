@@ -15,7 +15,7 @@ function Home() {
             <CandidateSection />
             <Slider />
             <Process />            
-            <CardSection />
+            {/* <CardSection /> */}
             <ContactForm />
             <Footer />
         </div>
