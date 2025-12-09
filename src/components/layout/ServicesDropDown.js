@@ -1,31 +1,42 @@
-import { MegaMenu, Navbar } from 'flowbite-react';
-import { Link } from 'react-router-dom';
+import { Dropdown, DropdownHeader, DropdownItem, DropdownDivider } from "flowbite-react";
+import { Link } from "react-router-dom";
+import { faChevronDown } from '@fortawesome/free-solid-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 function ServicesDropdown() {
-    const customTheme = {
-        root: {
-            base: "bg-white ",
-        },
-    };
+  return (
+    <Dropdown
+      renderTrigger={() => (
+        <span className="cursor-pointer hover:text-teal-600 ">
+          Services <FontAwesomeIcon icon={faChevronDown} />
+        </span>
+      )}
+      inline // keeps it inline with your navbar
+    >
 
-    return (
-        < MegaMenu theme={customTheme}>
-            <Navbar.Toggle />
-            <Navbar.Collapse >
-                <MegaMenu.Dropdown toggle={<div className="text-lg font-semibold ">{"Services"}</div>}>
+      <DropdownItem>
+        <Link to="/Services/TechnicalSupply">Technical Ship Supply & Spare Parts</Link>
+      </DropdownItem>
 
-                    <div className="text-sm text-gray-500 md:grid-cols-3 md:px-6">
-                        <ul className="space-y-4 sm:mb-4 md:mb-0 flex flex-col my-2">
-                            <Link className=" " to="/Services/TechnicalSupply">Technical Ship Supply & Spare Parts</Link>
-                            <Link className=" " to="/Services/RepairRetro" >Repair And Retrofit Services</Link>
-                            <Link className=" " to="/Services/MarineAutomation" >Marine Automation Services</Link>
-                            <Link className=" " to="/Services/DryDocking" >Dry-Docking Services</Link>
-                        </ul>
-                    </div>
-                </MegaMenu.Dropdown>
-            </Navbar.Collapse>
-        </MegaMenu>
-    )
+      <DropdownDivider />
+
+      <DropdownItem>
+        <Link to="/Services/RepairRetro">Repair And Retrofit Services</Link>
+      </DropdownItem>
+
+      <DropdownDivider />
+
+      <DropdownItem>
+        <Link to="/Services/MarineAutomation">Marine Automation Services</Link>
+      </DropdownItem>
+
+      <DropdownDivider />
+
+      <DropdownItem>
+        <Link to="/Services/DryDocking">Dry-Docking Services</Link>
+      </DropdownItem>
+    </Dropdown>
+  );
 }
 
 export default ServicesDropdown

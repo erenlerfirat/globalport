@@ -1,24 +1,22 @@
 import { useState } from "react";
 import { Link } from 'react-router-dom';
-import Button from "../common/Button";
 import logo from '../../assets/portlinelogo-mini.png'
-import {
-    MoonIcon,
-    SunIcon,
-    Bars3Icon,
-} from "@heroicons/react/24/outline";
+import { Bars3Icon } from "@heroicons/react/24/outline";
 import ServicesDropdown from "./ServicesDropDown";
 import Dropdown, { DropdownItem } from "../common/Dropdown";
-import { faGlobe } from '@fortawesome/free-solid-svg-icons'
+import { faGlobe,faChevronCircleDown } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-
+import InfoBar from "./InforBar.js";
+import Button from "../common/Button.js";
 
 const MainNavigation = () => {
 
     const [toggleMenu, setToggleMenu] = useState(false);
 
     return (
-        <nav className={`bg-white w-full left-0 right-0 top-0 font-semibold border-b border-gray-200 text-lg ${toggleMenu ? " fixed" : ""}`}>
+        <>
+            <InfoBar/>
+            <nav className={`bg-white w-full left-0 right-0 top-0 font-semibold border-b border-gray-200 text-lg ${toggleMenu ? " fixed" : ""}`}>
             <div className="max-w-7xl mx-auto w-full relative background " >
                 <div className="flex mx-auto justify-between w-5/6 ">
                     {/* Primary menu and logo */}
@@ -32,14 +30,14 @@ const MainNavigation = () => {
                         </div>
                         {/* primary */}
                         <div className="hidden lg:flex xl:gap-12 gap-6 ease-in-out ">
-                            <Link className="hover:underline hover:scale-110 duration-300" to="/Home">{"Home"}</Link>
+                            <Link className="hover:underline hover:scale-110 duration-300 hover:text-teal-600 " to="/Home">{"Home"}</Link>
                             <ServicesDropdown />
-                            <Link className="hover:underline hover:scale-110 duration-300" to="/Blog">{"Blog"}</Link>
-                            <Link className="hover:underline hover:scale-110 duration-300" to="/About">{"About"}</Link>
+                            <Link className="hover:underline hover:scale-110 duration-300 hover:text-teal-600 " to="/Blog">{"Blog"}</Link>
+                            <Link className="hover:underline hover:scale-110 duration-300 hover:text-teal-600 " to="/About">{"About"}</Link>
                         </div>
                     </div>
-                    {/* secondary */}
-                    {/* <div className="hidden lg:flex gap-6">
+                    {/* secondary  */}
+                     {/* <div className="hidden lg:flex gap-6">
                         <div className="lg:flex items-center xl:gap-6">
                             <div className="dark:bg-gray-500 lg:flex items-center gap-2 dark:bg-white" >
                                 
@@ -60,16 +58,15 @@ const MainNavigation = () => {
             </div>
             {/* mobile navigation */}
             <div
-                className={`fixed z-40 w-full bg-gray-50 overflow-hidden flex flex-col lg:hidden gap-12 origin-top duration-700 dark:bg-gray-600 ${!toggleMenu ? "h-0" : "h-full"
+                className={`fixed z-10 w-full bg-gray-50 overflow-hidden flex flex-col lg:hidden gap-12 origin-top duration-700 ${!toggleMenu ? "h-0" : "h-full"
                     }`}
             >
                 <div className=" mx-6">
-                    <div className="flex flex-col gap-8 w-full font-bold tracking-wider  lg:flex items-start gap-2  ">
-                        <Link className="hover:underline hover:scale-110 duration-300" to="/Home">{"home"}</Link>
-                        <Link className="hover:underline hover:scale-110 duration-300" to="/Services">{"services"}</Link>
+                    <div className="flex flex-col gap-8 w-full font-bold tracking-wider  lg:flex items-start gap-2 ">
+                        <Link className="hover:underline hover:scale-110 duration-300 hover:text-teal-600" to="/Home">{"Home"}</Link>
                         <ServicesDropdown />
-                        <Link className="hover:underline hover:scale-110 duration-300" to="/Blog">{"blog"}</Link>
-                        <Link className="hover:underline hover:scale-110 duration-300" to="/About">{"about"}</Link>
+                        <Link className="hover:underline hover:scale-110 duration-300 hover:text-teal-600" to="/Blog">{"Blog"}</Link>
+                        <Link className="hover:underline hover:scale-110 duration-300 hover:text-teal-600" to="/About">{"About"}</Link>
                     </div>
                     <div className="flex items-center mx-6 mt-8 gap-16">
                         <div className=" lg:flex gap-2" >                            
@@ -78,6 +75,7 @@ const MainNavigation = () => {
                 </div>
             </div>
         </nav>
+        </>
     );
 };
 

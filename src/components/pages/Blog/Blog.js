@@ -1,4 +1,3 @@
-import React from 'react'
 import MainNavigation from '../../layout/MainNavigation'
 import ContactForm from '../Home/ContactForm'
 import Footer from '../../layout/Footer'
