@@ -12,27 +12,28 @@ function Footer() {
                 </div>
                 <div className="my-8 mx-4 p-4 border-t-2 md:w-full md:flex md:justify-center">
                     <ul className="p-0 space-y-2 text-sm list-disc">
-                        <li><a href="#" className="text-gray-600 hover:text-blue-500">About Us</a></li>
-                        <li><a href="#" className="text-gray-600 hover:text-blue-500">Services</a></li>
-                        <li><a href="#" className="text-gray-600 hover:text-blue-500">Contact</a></li>
-                        <li><a href="#" className="text-gray-600 hover:text-blue-500">Patient Resources</a></li>
-                        <li><a href="#" className="text-gray-600 hover:text-blue-500">Privacy Policy</a></li>
-                        <li><a href="#" className="text-gray-600 hover:text-blue-500">Terms of Service</a></li>
-                        <li><a href="#" className="text-gray-600 hover:text-blue-500">Careers</a></li>
-                        <li><a href="#" className="text-gray-600 hover:text-blue-500">FAQs</a></li>
+                      <li><a href="#" className="text-gray-600 hover:text-blue-500">About Portline Global</a></li>
+                      <li><a href="#" className="text-gray-600 hover:text-blue-500">Marine Technical Services</a></li>
+                      <li><a href="#" className="text-gray-600 hover:text-blue-500">Dry Docking & Shipyard Support</a></li>
+                      <li><a href="#" className="text-gray-600 hover:text-blue-500">24/7 Emergency Assistance</a></li>
+                      <li><a href="#" className="text-gray-600 hover:text-blue-500">Fire Alarm & Safety Systems</a></li>
+                      <li><a href="#" className="text-gray-600 hover:text-blue-500">Automation & Alarm Diagnostics</a></li>
+                      <li><a href="#" className="text-gray-600 hover:text-blue-500">Mechanical & Electrical Repairs</a></li>
+                      <li><a href="#" className="text-gray-600 hover:text-blue-500">Marine Valves & Spare Parts Supply</a></li>
                     </ul>
-                </div>
+                  </div>
+
                 <div className="my-8 mx-4 p-4 border-t-2 md:w-full md:flex md:justify-center">
-                    <ul className="p-0 space-y-2 text-sm list-disc">
-                        <li><a href="#" className="text-gray-600 hover:text-blue-500">Services</a></li>
-                        <li><a href="#" className="text-gray-600 hover:text-blue-500">Contact</a></li>
-                        <li><a href="#" className="text-gray-600 hover:text-blue-500">Patient Resources</a></li>
-                        <li><a href="#" className="text-gray-600 hover:text-blue-500">Privacy Policy</a></li>
-                        <li><a href="#" className="text-gray-600 hover:text-blue-500">Terms of Service</a></li>
-                        <li><a href="#" className="text-gray-600 hover:text-blue-500">Careers</a></li>
-                        <li><a href="#" className="text-gray-600 hover:text-blue-500">FAQs</a></li>
-                        <li><a href="#" className="text-gray-600 hover:text-blue-500">About Us</a></li>
-                    </ul>
+                     <ul className="p-0 space-y-2 text-sm list-disc">
+                       <li><a href="#" className="text-gray-600 hover:text-blue-500">Technical Ship Supply</a></li>
+                       <li><a href="#" className="text-gray-600 hover:text-blue-500">Hydraulic & Pneumatic Services</a></li>
+                       <li><a href="#" className="text-gray-600 hover:text-blue-500">Engine Room Support</a></li>
+                       <li><a href="#" className="text-gray-600 hover:text-blue-500">Certified Marine Equipment</a></li>
+                       <li><a href="#" className="text-gray-600 hover:text-blue-500">Quality & Compliance Standards</a></li>
+                       <li><a href="#" className="text-gray-600 hover:text-blue-500">Global Supply Network</a></li>
+                       <li><a href="#" className="text-gray-600 hover:text-blue-500">Career Opportunities</a></li>
+                       <li><a href="#" className="text-gray-600 hover:text-blue-500">Contact & Support</a></li>
+                     </ul>
                 </div>
             </div>
         </div>
