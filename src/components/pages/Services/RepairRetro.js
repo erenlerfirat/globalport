@@ -1,4 +1,4 @@
-import img1 from '../../../assets/electircalpanel.jpg'
+import img1 from '../../../assets/welding.jpg'
 import { Link } from 'react-router-dom';
 import ContactForm from '../Home/ContactForm';
 import Footer from '../../layout/Footer';
