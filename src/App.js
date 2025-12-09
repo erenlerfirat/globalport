@@ -9,6 +9,7 @@ import DryDocking from './components/pages/Services/DryDocking.js'
 import TechnicalSupply from './components/pages/Services/TechnicalSupply.js'
 import RepairRetro from './components/pages/Services/RepairRetro.js'
 import MarineAutomation from './components/pages/Services/MarineAutomation.js'
+import Contact from './components/pages/Contact/Contact.js';
 
 function App() {
 
@@ -21,6 +22,7 @@ function App() {
         <Route path="/Services/RepairRetro" element={<RepairRetro />} />
         <Route path="/Services/MarineAutomation" element={<MarineAutomation />} />
         <Route path="/Home" element={<Home />} />
+        <Route path="/Contact" element={<Contact />} />
         <Route path="/Blog/1" element={<Article />} />
         <Route path="/Blog/2" element={<Article2 />} />
         <Route path="/Blog" element={<Blog />} />

@@ -13,7 +13,7 @@ export default function InfoBar() {
                {/* Left Side */}
                <div className="flex items-center gap-6 mx-20">
                  <span className="flex items-center gap-1">
-                     <a href="#"><FontAwesomeIcon icon={faPhone} style={{color: "#ffffff",}} /> +90 212 613 91 10</a>
+                     <a href="#"><FontAwesomeIcon icon={faPhone} style={{color: "#ffffff",}} /> (+90) 544 442 49 55</a>
                    
                  </span>
                  <span className="flex items-center gap-1">

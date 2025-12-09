@@ -31,6 +31,7 @@ const MainNavigation = () => {
                         {/* primary */}
                         <div className="hidden lg:flex xl:gap-12 gap-6 ease-in-out ">
                             <Link className="hover:underline hover:scale-110 duration-300 hover:text-teal-600 " to="/Home">{"Home"}</Link>
+                            <Link className="hover:underline hover:scale-110 duration-300 hover:text-teal-600 " to="/Contact">{"Contact"}</Link>
                             <ServicesDropdown />
                             <Link className="hover:underline hover:scale-110 duration-300 hover:text-teal-600 " to="/Blog">{"Blog"}</Link>
                             <Link className="hover:underline hover:scale-110 duration-300 hover:text-teal-600 " to="/About">{"About"}</Link>
@@ -63,7 +64,8 @@ const MainNavigation = () => {
             >
                 <div className=" mx-6">
                     <div className="flex flex-col gap-8 w-full font-bold tracking-wider  lg:flex items-start gap-2 ">
-                        <Link className="hover:underline hover:scale-110 duration-300 hover:text-teal-600" to="/Home">{"Home"}</Link>
+                        <Link className="hover:underline hover:scale-110 duration-300 hover:text-teal-600" to="/Home">{"Home"}</Link>                        
+                        <Link className="hover:underline hover:scale-110 duration-300 hover:text-teal-600 " to="/Contact">{"Contact"}</Link>
                         <ServicesDropdown />
                         <Link className="hover:underline hover:scale-110 duration-300 hover:text-teal-600" to="/Blog">{"Blog"}</Link>
                         <Link className="hover:underline hover:scale-110 duration-300 hover:text-teal-600" to="/About">{"About"}</Link>
