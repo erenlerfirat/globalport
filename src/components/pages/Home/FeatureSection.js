@@ -1,4 +1,4 @@
-import evergreen from '../../../assets/evergreen.jpg'
+import evergreen from '../../../assets/evergreen2.jpg'
 import loadedship from '../../../assets/loadedship.jpg'
 import valves from '../../../assets/valves.jpg'
 import valves2 from '../../../assets/valves2.jpg'
