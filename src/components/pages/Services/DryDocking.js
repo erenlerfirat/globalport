@@ -83,7 +83,7 @@ export default function DryDocking() {
 
         {/* Description */}
         <p className="mt-4 text-sm leading-6 text-gray-700">
-          The MSI team possesses extensive experience in a wide range of dry-docking projects, both in Turkey and internationally.
+          The Portline Global team possesses extensive experience in a wide range of dry-docking projects, both in Turkey and internationally.
            We offer comprehensive dry-docking services, including:
         </p>
 
