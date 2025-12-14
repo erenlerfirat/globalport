@@ -17,7 +17,7 @@ export default function InfoBar() {
                    
                  </span>
                  <span className="flex items-center gap-1">
-                   <a href="#">✉️ sales@globalportline.co</a>
+                   <a href="#">✉️ sales@portlineglobal.co</a>
                  </span>
                  <span className="flex items-center gap-1 italic">
                         <a href="#">PortlineGlobal.co</a>

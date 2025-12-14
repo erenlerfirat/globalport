@@ -1,14 +1,18 @@
 import MarineFlipbook from "./MarineFlipBook.js";
 
 
-
 export default function Brochure() {
   const allImages = require
-  .context('../../../assets/table-images', false, /\.jpeg$/)
-  .keys()
-  .map((key) =>
-    require('../../../assets/table-images' + key.replace('./', '/'))
-  );
+    .context('../../../assets/table-images', false, /\.jpeg$/)
+    .keys()
+    .sort((a, b) => {
+      const numA = parseInt(a.match(/\d+/)[0], 10);
+      const numB = parseInt(b.match(/\d+/)[0], 10);
+      return numA - numB;
+    })
+    .map((key) =>
+      require('../../../assets/table-images' + key.replace('./', '/'))
+    );
 
   return (
     <div className="min-h-screen bg-gray-100 py-10">
